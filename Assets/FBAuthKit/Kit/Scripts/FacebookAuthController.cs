@@ -52,7 +52,7 @@ namespace FBAuthKit
             if (FB.IsLoggedIn)
             {
                 AccessToken token = AccessToken.CurrentAccessToken;
-                Broadcast("OnAuthSuccess", token.TokenString);
+                Broadcast("OnAuthSuccess", token);
             }
             else
             {
