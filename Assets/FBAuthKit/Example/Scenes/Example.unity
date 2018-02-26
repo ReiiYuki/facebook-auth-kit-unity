@@ -155,6 +155,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4aea5758bd7da7a4bab6eaea49fe991e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &524859433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 524859435}
+  - component: {fileID: 524859434}
+  m_Layer: 0
+  m_Name: UI Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &524859434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524859433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a78a9bafe7df649a19154981356188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  facebookController: {fileID: 756951390}
+  statusText: {fileID: 771112886}
+--- !u!4 &524859435
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524859433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &550340632
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +272,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550340635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 756951391}
+        m_MethodName: Auth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &550340635
@@ -266,6 +319,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550340632}
+--- !u!1 &756951390 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1948237790205874, guid: 4aea5758bd7da7a4bab6eaea49fe991e,
+    type: 2}
+  m_PrefabInternal: {fileID: 320671522}
+--- !u!114 &756951391 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114006923069447416, guid: 4aea5758bd7da7a4bab6eaea49fe991e,
+    type: 2}
+  m_PrefabInternal: {fileID: 320671522}
+  m_Script: {fileID: 11500000, guid: 4ccfeb7a6a01fb14f8a2d260588122b6, type: 3}
 --- !u!1 &771112886
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +492,7 @@ RectTransform:
   - {fileID: 771112887}
   - {fileID: 550340633}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -634,7 +698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2061115845
 GameObject:
