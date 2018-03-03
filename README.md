@@ -20,7 +20,9 @@ using Facebook.Unity;
 using FBAuthKit;
 
 public class ExampleFBAuthSubscriber : MonoBehaviour {
-
+    
+    public GameObject facebookController;
+    
     void Start()
     {
         //Register as subscriber
