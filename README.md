@@ -6,7 +6,11 @@ Facebook Authentication Toolkit for Unity
 
 * Add Facebook Auth Controller from `FBAuthKit/Kit/Prefabs/Facebook Auth Controller.prefab` to your Unity scene.
 
+* Setup Permission in Facebook Auth Controller
+
 * Create Facebook Auth subscriber script and put it to scene.
+
+* Call `Auth` method of Facebook Auth Controller to login
 
 ## Facebook Auth Subscriber
 
