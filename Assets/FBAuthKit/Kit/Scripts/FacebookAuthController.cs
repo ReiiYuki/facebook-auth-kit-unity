@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Facebook.Unity;
 using PublisherKit;
 
@@ -7,6 +6,8 @@ namespace FBAuthKit
 {
     public class FacebookAuthController : Publisher
     {
+
+        public string[] permissions;
 
         #region Unity Behaviour
         void Awake()
@@ -42,7 +43,6 @@ namespace FBAuthKit
         #region Auth
         public void Auth()
         {
-            List<string> permissions = new List<string>() { "public_profile" };
             Broadcast("OnAuthRequest");
             FB.LogInWithReadPermissions(permissions, AuthCallback);
         }
